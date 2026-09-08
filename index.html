@@ -1,207 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Methusala K — AI & ML Engineer in Progress, Python Developer and Tech Enthusiast." />
-  <title>Methusala K | AI & ML Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Methusala K — Software Developer and B.Tech Artificial Intelligence & Machine Learning student.">
+  <meta name="keywords" content="Methusala K, AI ML, Python, Software Developer, Portfolio, Machine Learning">
+  <meta name="author" content="Methusala K">
+  <meta name="theme-color" content="#070910">
+  <meta property="og:title" content="Methusala K | Software Developer × AI & ML">
+  <meta property="og:description" content="Portfolio of Methusala K — building practical software and AI-driven solutions.">
+  <meta property="og:type" content="website">
+  <title>Methusala K | Software Developer × AI & ML</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="bg-grid"></div>
-  <div class="orb orb-one"></div>
-  <div class="orb orb-two"></div>
+  <div class="noise"></div>
+  <div class="grid-bg"></div>
+  <div class="glow glow-1"></div>
+  <div class="glow glow-2"></div>
 
-  <header class="nav-wrap">
-    <nav class="nav container">
-      <a class="brand" href="#home"><span>M</span>K</a>
-      <button class="menu-btn" aria-label="Toggle navigation">☰</button>
-      <div class="nav-links">
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a href="#home" class="brand" aria-label="Methusala home">
+        <span class="brand-mark">MK</span>
+        <span class="brand-name">METHUSALA<span>.</span></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+      <nav class="nav-links" id="navLinks">
         <a href="#about">About</a>
-        <a href="#stack">Stack</a>
+        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
-        <a href="#journey">Journey</a>
-        <a href="#contact" class="nav-cta">Let's connect ↗</a>
-      </div>
-    </nav>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certs</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="nav-resume" href="resume.pdf" download>Resume <span>↗</span></a>
+    </div>
   </header>
 
   <main>
-    <section id="home" class="hero container">
+    <section class="hero container" id="home">
       <div class="hero-copy reveal">
-        <div class="eyebrow"><span class="pulse"></span> AVAILABLE FOR LEARNING • BUILDING • COLLABORATING</div>
-        <h1>Building <span>intelligent</span><br>solutions with code.</h1>
-        <p class="hero-text">
-          I'm <strong>Methusala K</strong>, a B.Tech CSE (AI & ML) student focused on
-          Python, machine learning, data, cloud AI and modern web development.
+        <div class="availability"><span class="live-dot"></span> OPEN TO LEARNING • BUILDING • COLLABORATING</div>
+
+        <p class="hero-label">SOFTWARE DEVELOPER × AI & ML STUDENT</p>
+        <h1>Turning ideas into <span>useful technology.</span></h1>
+        <p class="hero-description">
+          I'm <strong>Methusala K</strong>, a B.Tech Artificial Intelligence & Machine Learning student
+          building practical projects across Python, data, databases, machine learning and modern web development.
         </p>
+
         <div class="hero-actions">
-          <a href="#projects" class="btn primary">Explore projects <span>↓</span></a>
-          <a href="https://github.com/methusala-k" target="_blank" rel="noreferrer" class="btn ghost">GitHub ↗</a>
+          <a class="btn btn-primary" href="#projects">Explore my work <span>↓</span></a>
+          <a class="btn btn-secondary" href="https://github.com/methusala-jeeva" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
         </div>
-        <div class="mini-stats">
-          <div><strong>AI/ML</strong><span>Core focus</span></div>
-          <div><strong>Python</strong><span>Primary language</span></div>
-          <div><strong>2025–29</strong><span>Academic journey</span></div>
+
+        <div class="hero-meta">
+          <span>📍 India</span>
+          <span>🎓 2025 — 2029</span>
+          <span>🧠 AI & ML</span>
         </div>
       </div>
 
-      <div class="hero-card reveal delay-1">
-        <div class="terminal-top"><span></span><span></span><span></span><code>methusala.py</code></div>
-        <pre><span class="kw">class</span> <span class="fn">MethusalaK</span>:
-    role = <span class="str">"AI & ML Student"</span>
-    focus = [
-      <span class="str">"Machine Learning"</span>,
-      <span class="str">"Python Development"</span>,
-      <span class="str">"Cloud AI"</span>,
-      <span class="str">"Data & Databases"</span>
-    ]
-
-    mission = <span class="str">"Build intelligent
-    solutions for real-world problems."</span>
-
-    <span class="kw">def</span> <span class="fn">motto</span>(self):
-      <span class="kw">return</span> <span class="str">"Learn → Build → Improve → Repeat 🚀"</span></pre>
-        <div class="terminal-status"><span class="status-dot"></span> system.online()</div>
+      <div class="hero-visual reveal delay-1">
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="code-window">
+          <div class="window-bar">
+            <div class="window-dots"><i></i><i></i><i></i></div>
+            <span>methusala.py</span>
+            <b>PY</b>
+          </div>
+          <div class="code-body">
+            <div><span class="line-no">01</span><span><em>class</em> <strong>MethusalaK</strong>:</span></div>
+            <div><span class="line-no">02</span><span>&nbsp;&nbsp;role = <mark>"Software Developer"</mark></span></div>
+            <div><span class="line-no">03</span><span>&nbsp;&nbsp;specialization = <mark>"AI & ML"</mark></span></div>
+            <div><span class="line-no">04</span><span>&nbsp;&nbsp;skills = [</span></div>
+            <div><span class="line-no">05</span><span>&nbsp;&nbsp;&nbsp;&nbsp;<mark>"Python"</mark>, <mark>"MySQL"</mark>,</span></div>
+            <div><span class="line-no">06</span><span>&nbsp;&nbsp;&nbsp;&nbsp;<mark>"Data"</mark>, <mark>"Web"</mark>, <mark>"ML"</mark></span></div>
+            <div><span class="line-no">07</span><span>&nbsp;&nbsp;]</span></div>
+            <div><span class="line-no">08</span><span>&nbsp;</span></div>
+            <div><span class="line-no">09</span><span>&nbsp;&nbsp;<em>def</em> <strong>build</strong>(self):</span></div>
+            <div><span class="line-no">10</span><span>&nbsp;&nbsp;&nbsp;&nbsp;<em>return</em> <mark>"Learn → Build → Improve"</mark></span></div>
+            <div class="terminal-cursor">▊</div>
+          </div>
+          <div class="window-status"><span><i></i> SYSTEM ONLINE</span><span>main • portfolio</span></div>
+        </div>
       </div>
     </section>
 
-    <section id="about" class="section container">
-      <div class="section-head reveal">
-        <span class="section-no">01</span>
-        <div><p class="kicker">WHOAMI</p><h2>Curious by nature.<br><span>Builder by choice.</span></h2></div>
+    <section class="impact-strip container reveal">
+      <div><strong>1,000+</strong><span>records processed</span></div>
+      <div><strong>2</strong><span>internship experiences</span></div>
+      <div><strong>3</strong><span>core resume projects</span></div>
+      <div><strong>5+</strong><span>certifications</span></div>
+    </section>
+
+    <section class="section container" id="about">
+      <div class="section-heading reveal">
+        <div class="section-index">01</div>
+        <div><p>PROFILE</p><h2>Curious by nature.<br><span>Builder by choice.</span></h2></div>
       </div>
-      <div class="about-grid">
-        <article class="glass about-main reveal">
-          <p class="lead">I'm a Computer Science student specializing in AI & ML, focused on turning ideas into practical technology.</p>
-          <p>I enjoy learning the foundations behind intelligent systems and then turning those concepts into working projects — from Python applications and machine learning models to web interfaces and data-driven platforms.</p>
+
+      <div class="about-layout">
+        <article class="glass about-card reveal">
+          <div class="card-top"><span>01 / ABOUT</span><span>WHOAMI</span></div>
+          <h3>Building a strong foundation in AI, software and data.</h3>
+          <p>
+            I'm pursuing B.Tech in Artificial Intelligence and Machine Learning at Karunya Institute of
+            Technology and Sciences. My foundation includes Python, MySQL, data analytics, machine learning
+            concepts and web development.
+          </p>
+          <p>
+            I enjoy taking a real-world problem, breaking it into smaller systems and turning those pieces
+            into a working application — whether that means cleaning data, automating a workflow, designing
+            a database or building an interactive web experience.
+          </p>
           <div class="quote">“Learn → Build → Improve → Repeat.”</div>
         </article>
-        <div class="info-stack">
-          <article class="glass info-card reveal"><span>🎓</span><div><small>EDUCATION</small><strong>B.Tech CSE (AI & ML)</strong><p>Karunya Institute of Technology</p></div></article>
-          <article class="glass info-card reveal"><span>🧠</span><div><small>CURRENTLY LEARNING</small><strong>ML • DL • React • Cloud AI</strong><p>Building practical foundations</p></div></article>
-          <article class="glass info-card reveal"><span>🎯</span><div><small>MISSION</small><strong>Real-world AI solutions</strong><p>Design → Build → Deploy</p></div></article>
+
+        <div class="about-side">
+          <div class="mini-card glass reveal">
+            <span class="mini-icon">🎓</span>
+            <div><small>EDUCATION</small><b>B.Tech — AI & ML</b><p>Karunya Institute of Technology and Sciences</p></div>
+          </div>
+          <div class="mini-card glass reveal">
+            <span class="mini-icon">⚙️</span>
+            <div><small>FOCUS</small><b>Python • Data • ML • Web</b><p>Practical project development</p></div>
+          </div>
+          <div class="mini-card glass reveal">
+            <span class="mini-icon">🎯</span>
+            <div><small>MISSION</small><b>Real-world solutions</b><p>Design → Build → Improve</p></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="stack" class="section container">
-      <div class="section-head reveal">
-        <span class="section-no">02</span>
-        <div><p class="kicker">TECH ARSENAL</p><h2>Tools I use to<br><span>turn ideas into systems.</span></h2></div>
+    <section class="section container" id="experience">
+      <div class="section-heading reveal">
+        <div class="section-index">02</div>
+        <div><p>EXPERIENCE</p><h2>Where I turned<br><span>learning into practice.</span></h2></div>
       </div>
-      <div class="stack-grid">
-        <article class="stack-card glass reveal"><div class="stack-icon">🐍</div><h3>AI / Machine Learning</h3><p>Machine Learning · Scikit-learn · Neural Networks · TensorFlow · Data Preprocessing · Model Evaluation</p><div class="tags"><b>Python</b><b>TensorFlow</b><b>Scikit-learn</b></div></article>
-        <article class="stack-card glass reveal"><div class="stack-icon">⌘</div><h3>Development</h3><p>Python · HTML · CSS · JavaScript · React · REST APIs · FastAPI</p><div class="tags"><b>React</b><b>FastAPI</b><b>JavaScript</b></div></article>
-        <article class="stack-card glass reveal"><div class="stack-icon">◫</div><h3>Data & Databases</h3><p>SQL · CRUD · Database Design · Normalization · Data Management · Query fundamentals</p><div class="tags"><b>MySQL</b><b>SQL</b><b>CRUD</b></div></article>
-        <article class="stack-card glass reveal"><div class="stack-icon">⚙</div><h3>Tools & Cloud</h3><p>Git · GitHub · VS Code · Jupyter · Oracle Cloud · AI Services · Deployment</p><div class="tags"><b>Git</b><b>GitHub</b><b>Oracle Cloud</b></div></article>
-      </div>
-    </section>
 
-    <section id="projects" class="section container">
-      <div class="section-head reveal">
-        <span class="section-no">03</span>
-        <div><p class="kicker">SELECTED WORK</p><h2>Projects that show<br><span>how I learn by building.</span></h2></div>
-      </div>
-      <div class="project-grid">
-        <article class="project glass featured reveal">
-          <div class="project-top"><span class="project-num">01</span><span class="project-type">AI / WEB</span></div>
-          <h3>Smart Logistics Intelligence</h3>
-          <p>AI-oriented platform designed around logistics intelligence, route analysis and accessibility insights for data-driven decisions.</p>
-          <div class="project-tags"><span>React</span><span>Python</span><span>AI/ML</span><span>REST API</span></div>
-          <a href="https://github.com/methusala-k" target="_blank" rel="noreferrer">View on GitHub ↗</a>
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <div class="timeline-marker">01</div>
+          <div class="timeline-date">MAY — JUN 2026<br><span>15 DAYS</span></div>
+          <div class="timeline-content glass">
+            <div class="role-row"><span class="pill">AI DATA ANALYTICS INTERN</span><span class="type">INTERNSHIP</span></div>
+            <h3>Inamingos Foundation</h3>
+            <p>
+              Collected, cleaned and organized 1,000+ records using Python, Pandas and Excel. Worked on
+              data-quality validation, preprocessing, trend analysis and structured analytics reporting,
+              while supporting AI/ML workflows.
+            </p>
+            <div class="tech-row"><span>Python</span><span>Pandas</span><span>Excel</span><span>Data Research</span></div>
+          </div>
         </article>
-        <article class="project glass reveal">
-          <div class="project-top"><span class="project-num">02</span><span class="project-type">MACHINE LEARNING</span></div>
-          <h3>House Price Prediction</h3>
-          <p>Machine learning project covering data preprocessing, feature selection, model training, evaluation and prediction.</p>
-          <div class="project-tags"><span>Python</span><span>Pandas</span><span>Scikit-learn</span></div>
-          <a href="https://github.com/methusala-k" target="_blank" rel="noreferrer">View on GitHub ↗</a>
-        </article>
-        <article class="project glass reveal">
-          <div class="project-top"><span class="project-num">03</span><span class="project-type">PYTHON</span></div>
-          <h3>Student Management System</h3>
-          <p>Console-based application for adding, viewing, searching and deleting student records with persistent file storage.</p>
-          <div class="project-tags"><span>Python</span><span>File Handling</span><span>CRUD</span></div>
-          <a href="https://github.com/methusala-k" target="_blank" rel="noreferrer">View on GitHub ↗</a>
-        </article>
-        <article class="project glass reveal">
-          <div class="project-top"><span class="project-num">04</span><span class="project-type">DATABASE</span></div>
-          <h3>Database Application</h3>
-          <p>Relational database application focused on structured data management, relationships, CRUD operations and normalization.</p>
-          <div class="project-tags"><span>MySQL</span><span>SQL</span><span>DDL</span><span>DML</span></div>
-          <a href="https://github.com/methusala-k" target="_blank" rel="noreferrer">View on GitHub ↗</a>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-marker">02</div>
+          <div class="timeline-date">JUN — JUL 2026<br><span>30 DAYS</span></div>
+          <div class="timeline-content glass">
+            <div class="role-row"><span class="pill">PYTHON AUTOMATION INTERN</span><span class="type">INTERNSHIP</span></div>
+            <h3>InternzValley</h3>
+            <p>
+              Developed Python scripts for repetitive-task automation and operational workflows, with
+              hands-on work in file handling, data processing, debugging and workflow optimization.
+            </p>
+            <div class="tech-row"><span>Python</span><span>Automation</span><span>File Handling</span><span>Debugging</span></div>
+          </div>
         </article>
       </div>
     </section>
 
-    <section id="journey" class="section container">
-      <div class="section-head reveal">
-        <span class="section-no">04</span>
-        <div><p class="kicker">ROADMAP</p><h2>From fundamentals<br><span>to deployed intelligence.</span></h2></div>
-      </div>
-      <div class="roadmap glass reveal">
-        <div class="road-step active"><span>01</span><div><small>FOUNDATION</small><h3>Python + Data</h3><p>Programming, SQL, databases and data handling.</p></div></div>
-        <div class="road-line"></div>
-        <div class="road-step active"><span>02</span><div><small>CORE AI</small><h3>Machine Learning</h3><p>Supervised learning, preprocessing, features and evaluation.</p></div></div>
-        <div class="road-line"></div>
-        <div class="road-step"><span>03</span><div><small>NEXT</small><h3>Deep Learning</h3><p>Neural networks, backpropagation, TensorFlow and Keras.</p></div></div>
-        <div class="road-line"></div>
-        <div class="road-step"><span>04</span><div><small>DEPLOY</small><h3>Cloud AI + MLOps</h3><p>AI services, APIs, deployment and production workflows.</p></div></div>
+    <section class="section container" id="projects">
+      <div class="section-heading reveal">
+        <div class="section-index">03</div>
+        <div><p>SELECTED WORK</p><h2>Projects that show<br><span>how I think and build.</span></h2></div>
       </div>
 
-      <div class="goals-grid">
-        <div class="glass goal reveal"><div class="goal-head"><span>Build 5+ strong projects</span><strong>80%</strong></div><div class="bar"><i style="width:80%"></i></div></div>
-        <div class="glass goal reveal"><div class="goal-head"><span>Master ML fundamentals</span><strong>70%</strong></div><div class="bar"><i style="width:70%"></i></div></div>
-        <div class="glass goal reveal"><div class="goal-head"><span>Learn Deep Learning</span><strong>55%</strong></div><div class="bar"><i style="width:55%"></i></div></div>
-        <div class="glass goal reveal"><div class="goal-head"><span>Deploy AI applications</span><strong>40%</strong></div><div class="bar"><i style="width:40%"></i></div></div>
-        <div class="glass goal reveal"><div class="goal-head"><span>Open Source Contributions</span><strong>30%</strong></div><div class="bar"><i style="width:30%"></i></div></div>
+      <div class="projects-grid">
+        <article class="project-card project-featured reveal">
+          <div class="project-top"><span>01 / 04</span><span>2026</span></div>
+          <div class="project-content">
+            <p class="project-label">FLEET NAVIGATION • WEB APPLICATION</p>
+            <h3>LorryNav Pro India</h3>
+            <p>
+              An interactive fleet navigation and logistics platform focused on map-based route planning
+              and alternative route suggestions.
+            </p>
+            <div class="tech-row"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Leaflet.js</span></div>
+          </div>
+          <div class="project-number">01</div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-top"><span>02 / 04</span><span>PYTHON</span></div>
+          <div class="project-content">
+            <p class="project-label">DATA • ACADEMIC PROJECT</p>
+            <h3>Student Management System</h3>
+            <p>A Python application demonstrating student-data handling, preprocessing, data structures and management workflows.</p>
+            <div class="tech-row"><span>Python</span><span>Pandas</span><span>NumPy</span></div>
+          </div>
+          <div class="project-number">02</div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-top"><span>03 / 04</span><span>MYSQL</span></div>
+          <div class="project-content">
+            <p class="project-label">DATABASE • ACADEMIC PROJECT</p>
+            <h3>Simple Database Application</h3>
+            <p>A database application focused on user-data storage, basic queries and core database operations.</p>
+            <div class="tech-row"><span>MySQL</span><span>Database Design</span><span>Data Modeling</span></div>
+          </div>
+          <div class="project-number">03</div>
+        </article>
+
+        <article class="project-card project-wide reveal">
+          <div class="project-top"><span>04 / 04</span><span>ML</span></div>
+          <div class="project-content">
+            <p class="project-label">MACHINE LEARNING • PORTFOLIO PROJECT</p>
+            <h3>House Price Prediction</h3>
+            <p>A practical machine-learning workflow using Python, Pandas and scikit-learn for prediction-focused experimentation.</p>
+            <div class="tech-row"><span>Python</span><span>Pandas</span><span>NumPy</span><span>Scikit-learn</span></div>
+          </div>
+          <div class="project-number">04</div>
+        </article>
       </div>
     </section>
 
-    <section class="section container">
-      <div class="section-head reveal">
-        <span class="section-no">05</span>
-        <div><p class="kicker">CREDENTIALS</p><h2>Learning beyond<br><span>the classroom.</span></h2></div>
+    <section class="section container" id="skills">
+      <div class="section-heading reveal">
+        <div class="section-index">04</div>
+        <div><p>TECHNICAL TOOLKIT</p><h2>The stack behind<br><span>my projects.</span></h2></div>
       </div>
+
+      <div class="skills-grid">
+        <article class="skill glass reveal"><div class="skill-icon">🐍</div><div><small>01 / PROGRAMMING</small><h3>Python</h3><p>Automation, data processing and problem solving.</p></div></article>
+        <article class="skill glass reveal"><div class="skill-icon">🗄️</div><div><small>02 / DATA</small><h3>MySQL + Analytics</h3><p>Database design, data modeling, Pandas and Excel.</p></div></article>
+        <article class="skill glass reveal"><div class="skill-icon">🌐</div><div><small>03 / WEB</small><h3>HTML + CSS + JS</h3><p>Responsive interfaces and interactive experiences.</p></div></article>
+        <article class="skill glass reveal"><div class="skill-icon">🧠</div><div><small>04 / AI & ML</small><h3>ML Foundations</h3><p>Scikit-learn, TensorFlow, PyTorch and neural-network foundations.</p></div></article>
+        <article class="skill glass reveal"><div class="skill-icon">⚡</div><div><small>05 / BACKEND</small><h3>FastAPI</h3><p>Python-based API development and backend experimentation.</p></div></article>
+        <article class="skill glass reveal"><div class="skill-icon">🛠️</div><div><small>06 / TOOLS</small><h3>Git + GitHub</h3><p>VS Code, Jupyter and a practical development workflow.</p></div></article>
+      </div>
+    </section>
+
+    <section class="section container" id="certifications">
+      <div class="section-heading reveal">
+        <div class="section-index">05</div>
+        <div><p>CREDENTIALS</p><h2>Learning, validated<br><span>one step at a time.</span></h2></div>
+      </div>
+
       <div class="cert-grid">
-        <div class="cert glass reveal"><span>01</span><strong>Python Essentials 1 & 2</strong><small>Cisco Networking Academy</small></div>
-        <div class="cert glass reveal"><span>02</span><strong>Introduction to IoT</strong><small>Cisco</small></div>
-        <div class="cert glass reveal"><span>03</span><strong>AI Bootcamp</strong><small>Karunya Institute</small></div>
-        <div class="cert glass reveal"><span>04</span><strong>Front-End Development</strong><small>Infosys Springboard</small></div>
-        <div class="cert glass reveal"><span>05</span><strong>Oracle Cloud AI Foundations</strong><small>Oracle</small></div>
+        <div class="cert glass reveal"><span>01</span><div><b>Python Essentials 1 & 2</b><small>Cisco Networking Academy</small></div><i>↗</i></div>
+        <div class="cert glass reveal"><span>02</span><div><b>Introduction to IoT</b><small>Cisco</small></div><i>↗</i></div>
+        <div class="cert glass reveal"><span>03</span><div><b>AI Bootcamp</b><small>Karunya University</small></div><i>↗</i></div>
+        <div class="cert glass reveal"><span>04</span><div><b>Front End Development</b><small>Infosys Springboard</small></div><i>↗</i></div>
+        <div class="cert glass reveal"><span>05</span><div><b>Oracle Cloud AI Foundations</b><small>Oracle</small></div><i>↗</i></div>
       </div>
     </section>
 
-    <section class="section github-section container">
-      <div class="github-panel glass reveal">
-        <div><p class="kicker">GITHUB INTELLIGENCE</p><h2>Follow the code,<br><span>not just the title.</span></h2><p>Explore repositories, experiments and the projects behind this portfolio.</p></div>
-        <a class="btn primary" href="https://github.com/methusala-k" target="_blank" rel="noreferrer">Open GitHub ↗</a>
+    <section class="section container" id="journey">
+      <div class="section-heading reveal">
+        <div class="section-index">06</div>
+        <div><p>ROADMAP</p><h2>From student<br><span>to AI engineer.</span></h2></div>
       </div>
-      <div class="github-stats reveal">
-        <img src="https://github-readme-stats.vercel.app/api?username=methusala-k&show_icons=true&theme=transparent&hide_border=true&title_color=8ab4ff&text_color=c8d1e0&icon_color=8ab4ff&bg_color=00000000" alt="GitHub statistics">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=methusala-k&layout=compact&theme=transparent&hide_border=true&title_color=8ab4ff&text_color=c8d1e0&bg_color=00000000" alt="Top languages">
+
+      <div class="journey glass reveal">
+        <div class="journey-step active"><span>01</span><small>NOW</small><h3>Strengthen foundations</h3><p>Deepen Python, ML, data workflows and software engineering fundamentals.</p></div>
+        <div class="journey-step"><span>02</span><small>NEXT</small><h3>Build intelligent products</h3><p>Combine models, APIs, databases and modern interfaces into end-to-end applications.</p></div>
+        <div class="journey-step"><span>03</span><small>GOAL</small><h3>Become an AI Engineer</h3><p>Keep solving real-world problems with useful, measurable and responsible technology.</p></div>
       </div>
     </section>
 
-    <section id="contact" class="contact container reveal">
-      <p class="kicker">06 — LET'S CONNECT</p>
-      <h2>Have an idea?<br><span>Let's build it.</span></h2>
-      <p>I'm always interested in learning, building useful projects and connecting with people working on interesting technology.</p>
-      <div class="hero-actions">
-        <a class="btn primary" href="mailto:methusala212@gmail.com">Email me ↗</a>
-        <a class="btn ghost" href="https://linkedin.com/in/methusala-jeeva-947328378" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+    <section class="section container contact-section" id="contact">
+      <div class="contact-card reveal">
+        <p class="contact-label">LET'S CONNECT</p>
+        <h2>Have something worth<br><span>building?</span></h2>
+        <p>I'm interested in learning, collaborating and turning meaningful ideas into practical technical projects.</p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:methusala212@gmail.com">Start a conversation ↗</a>
+          <a class="btn btn-secondary" href="https://www.linkedin.com/in/methusala-jeeva-947328378" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <a class="btn btn-secondary" href="https://github.com/methusala-jeeva" target="_blank" rel="noreferrer">GitHub ↗</a>
+        </div>
+        <div class="contact-email">methusala212@gmail.com</div>
       </div>
     </section>
   </main>
 
-  <footer class="footer container">
-    <span>© 2026 Methusala K</span>
-    <span>Built with curiosity • code • caffeine ☕</span>
-    <a href="#home">Back to top ↑</a>
+  <footer class="container footer">
+    <div><b>MK.</b> © 2026 Methusala K</div>
+    <div>Built with HTML • CSS • JavaScript</div>
+    <a href="#top">Back to top ↑</a>
   </footer>
 
   <script src="script.js"></script>
