@@ -1,44 +1,60 @@
-# Methusala K — AI & ML Portfolio
+# Methusala K — Advanced Portfolio
 
-A modern, responsive developer portfolio built with **HTML, CSS and vanilla JavaScript**. It is intentionally dependency-free so it can be deployed directly with GitHub Pages.
+A polished, responsive personal portfolio built with **HTML, CSS and vanilla JavaScript**. No framework or build step is required, so it is ideal for GitHub Pages.
 
-## ✨ Features
+## ✨ What is included
 
-- Premium dark glassmorphism UI
-- Responsive mobile navigation
+- Premium dark futuristic UI
+- Responsive navigation with mobile menu
+- Animated hero code-window
+- Scroll-progress indicator
 - Scroll reveal animations
-- Hero terminal-style profile card
-- Skills / tech stack sections
-- Featured projects
-- AI Engineer roadmap
-- Learning goals with progress bars
-- Certifications
-- Live GitHub stats cards
-- GitHub + LinkedIn + email CTAs
-- No build step required
+- Glassmorphism cards and subtle grid/noise background
+- Resume-driven education, experience, projects and certifications
+- Project showcase with responsive layouts
+- Technical skills matrix
+- AI/ML learning roadmap
+- Email, GitHub and LinkedIn CTAs
+- SEO + Open Graph metadata
+- Reduced-motion accessibility support
+- GitHub Pages compatible
 
-## 🚀 Run locally
+## 📁 Files
 
-Open `index.html` directly in a browser, or use VS Code's Live Server extension.
+```text
+index.html
+styles.css
+script.js
+README.md
+resume.pdf   ← add your resume here
+```
 
-## 🌐 Deploy on GitHub Pages
+## 🚀 GitHub Pages deployment
 
-1. Create a repository, for example `portfolio`.
-2. Upload `index.html`, `styles.css`, `script.js` and `README.md`.
-3. Go to **Settings → Pages**.
-4. Under **Build and deployment**, select **Deploy from a branch**.
-5. Choose `main` and `/root`.
-6. Save and wait for GitHub Pages to publish.
+1. Create/open your repository.
+2. Upload `index.html`, `styles.css`, `script.js` and `README.md` to the **root** of the `main` branch.
+3. Add your resume as `resume.pdf` to the same root if you want the Resume button to work.
+4. Open **Settings → Pages**.
+5. Select **Deploy from a branch**.
+6. Select `main` and `/ (root)`.
+7. Save and wait for the deployment to finish.
 
-## 🔧 Personalize
+Your project URL will normally look like:
 
-Update the links and content in `index.html`:
-- GitHub: `https://github.com/methusala-k`
-- LinkedIn: `https://linkedin.com/in/methusala-jeeva-947328378`
-- Email: `methusala212@gmail.com`
+`https://methusala-jeeva.github.io/methusala-portfolio/`
 
-Replace project GitHub links with the individual repository URLs as each project is uploaded.
+## 🔧 Personal links already configured
 
-## 📌 Source profile basis
+- GitHub: https://github.com/methusala-jeeva
+- LinkedIn: https://www.linkedin.com/in/methusala-jeeva-947328378
+- Email: methusala212@gmail.com
 
-The portfolio content was structured from the supplied GitHub profile README, including the education, skills, projects, certifications, learning roadmap and 2026 goals.
+## 📝 Customization
+
+Project GitHub/demo buttons can be added later when individual project repositories are available.
+
+The public portfolio intentionally does not display phone number or full street address. Keep sensitive contact details private unless you specifically want to publish them.
+
+## 🛠️ Run locally
+
+Simply open `index.html` in a browser, or use VS Code Live Server.
